@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>猫の飲水量計算アプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>猫の飲水量計算</h1>
+
+  <div class="form">
+    <label>体重（kg）</label>
+    <input type="number" id="weight" step="0.1">
+
+    <label>年齢区分</label>
+    <select id="age">
+      <option value="kitten">子猫</option>
+      <option value="adult">成猫</option>
+      <option value="senior">シニア</option>
+    </select>
+
+    <label>健康状態</label>
+    <select id="health">
+      <option value="none">なし</option>
+      <option value="ckd">腎臓病</option>
+      <option value="urinary">尿路疾患</option>
+    </select>
+
+    <label>食事タイプ</label>
+    <select id="diet">
+      <option value="dry">ドライ中心</option>
+      <option value="wet">ウェット中心</option>
+    </select>
+
+    <label>季節</label>
+    <select id="season">
+      <option value="normal">春・秋</option>
+      <option value="summer">夏</option>
+      <option value="winter">冬</option>
+    </select>
+
+    <button id="calcBtn">計算する</button>
+  </div>
+
+  <div id="result"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
