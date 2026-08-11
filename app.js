@@ -51,3 +51,8 @@ document.getElementById("calcBtn").addEventListener("click", () => {
     <p>2L換算：<strong>${bottles2L} 本</strong></p>
   `;
 });
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/bousai-water/service-worker.js");
+}
+
